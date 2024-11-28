@@ -1,0 +1,22 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore package management
+packages/
+*.nupkg
+project.lock.json
+
+# Ignore IDE settings
+*.ideconfig
+
+# Ignore files created by Visual Studio Code
+.vscode/
