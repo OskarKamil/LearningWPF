@@ -1,4 +1,4 @@
-﻿namespace Learning.src.Models
+﻿namespace DataBindingStudy.src.Models
 {
     public enum Sex
     {

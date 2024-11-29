@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Learning
+namespace DataBindingStudy
 {
     /// <summary>
     /// Interaction logic for App.xaml

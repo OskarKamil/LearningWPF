@@ -1,7 +1,7 @@
-﻿using Learning.src.Models;
+﻿using DataBindingStudy.src.Models;
 using System.Collections.ObjectModel;
 
-namespace Learning.src.ViewModels
+namespace DataBindingStudy.src.ViewModels
 {
     internal class MainWindowViewModel
     {

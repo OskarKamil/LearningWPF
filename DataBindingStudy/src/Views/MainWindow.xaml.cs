@@ -1,7 +1,7 @@
-﻿using Learning.src.ViewModels;
+﻿using DataBindingStudy.src.ViewModels;
 using System.Windows;
 
-namespace Learning
+namespace DataBindingStudy
 {
     public partial class MainWindow : Window
     {

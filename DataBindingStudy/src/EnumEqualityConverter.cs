@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Learning.src
+namespace DataBindingStudy.src
 {
     internal class EnumEqualityConverter
     {
