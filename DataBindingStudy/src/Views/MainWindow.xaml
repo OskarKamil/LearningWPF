@@ -5,6 +5,46 @@
         WindowStartupLocation="CenterScreen"
         Width="450"
         Height="550">
+    <Window.Resources>
+        <DataTemplate x:Key="PersonTemplate">
+            <DockPanel LastChildFill="False"
+                       Margin="5">
+                <StackPanel Orientation="Horizontal"
+                            DockPanel.Dock="Left">
+                    <TextBlock Text="{Binding Name}"
+                               FontWeight="Bold"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text=":"
+                               Margin="0,0,0,0"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding Age}"
+                               Margin="10,0,0,0"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+                <GroupBox Header="Sex"
+                          DockPanel.Dock="Right"
+                          VerticalAlignment="Center"
+                          Margin="5,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+
+                        <Label>Male</Label>
+                        <Label>Female</Label>
+                    </StackPanel>
+                </GroupBox>
+                <Button Content="Change details"
+                        DockPanel.Dock="Right"
+                        Click="ButtonChangeDetails_Click"
+                        Margin="5,0,0,0"
+                        VerticalAlignment="Center" />
+                <Button Content="Delete employee"
+                        DockPanel.Dock="Right"
+                        Click="ButtonDeleteEmployee_Click"
+                        Background="#FFFF8F8F"
+                        OpacityMask="#FF654A4A"
+                        VerticalAlignment="Center" />
+            </DockPanel>
+        </DataTemplate>
+    </Window.Resources>
     <StackPanel>
 
         <Border BorderBrush="Black"
@@ -14,54 +54,14 @@
             <StackPanel Orientation="Vertical">
                 <Label HorizontalAlignment="Center"
                        Content="List of employees:" />
-                <ItemsControl ItemsSource="{Binding Persons}">
+                <ItemsControl ItemsSource="{Binding Persons}"
+                              ItemTemplate="{StaticResource PersonTemplate}">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <StackPanel Orientation="Vertical"
                                         Margin="0" />
                         </ItemsPanelTemplate>
                     </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <DockPanel LastChildFill="False"
-                                       Margin="5">
-                                <StackPanel Orientation="Horizontal"
-                                            DockPanel.Dock="Left">
-                                    <TextBlock Text="{Binding Name}"
-                                               FontWeight="Bold"
-                                               VerticalAlignment="Center" />
-                                    <TextBlock Text=":"
-                                               Margin="0,0,0,0"
-                                               VerticalAlignment="Center" />
-                                    <TextBlock Text="{Binding Age}"
-                                               Margin="10,0,0,0"
-                                               VerticalAlignment="Center" />
-                                </StackPanel>
-                                <GroupBox Header="Sex"
-                                          DockPanel.Dock="Right"
-                                          VerticalAlignment="Center"
-                                          Margin="5,0,0,0">
-                                    <StackPanel Orientation="Horizontal">
-
-
-                                        <Label>Male</Label>
-                                        <Label>Female</Label>
-                                    </StackPanel>
-                                </GroupBox>
-                                <Button Content="Change details"
-                                        DockPanel.Dock="Right"
-                                        Click="ButtonChangeDetails_Click"
-                                        Margin="5,0,0,0"
-                                        VerticalAlignment="Center" />
-                                <Button Content="Delete employee"
-                                        DockPanel.Dock="Right"
-                                        Click="ButtonDeleteEmployee_Click"
-                                        Background="#FFFF8F8F"
-                                        OpacityMask="#FF654A4A"
-                                        VerticalAlignment="Center" />
-                            </DockPanel>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
                 </ItemsControl>
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Center">
@@ -76,7 +76,7 @@
                 </StackPanel>
             </StackPanel>
         </Border>
-      
+
         <Button Grid.Row="2"
                 Content="Add employee"
                 HorizontalAlignment="Center"
