@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingStudy", "DataBin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning2", "Learning2\Learning2.csproj", "{E4AA8628-839F-44F3-8B53-F9C6F2A0CE86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningUnitTests", "LearningUnitTests\LearningUnitTests.csproj", "{8A449120-5A8C-4C35-87DC-79B69E59F094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsLearning", "UnitTestsLearning\UnitTestsLearning.csproj", "{7326DF64-6E26-48F5-B73A-20626283B166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E4AA8628-839F-44F3-8B53-F9C6F2A0CE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4AA8628-839F-44F3-8B53-F9C6F2A0CE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4AA8628-839F-44F3-8B53-F9C6F2A0CE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A449120-5A8C-4C35-87DC-79B69E59F094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A449120-5A8C-4C35-87DC-79B69E59F094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A449120-5A8C-4C35-87DC-79B69E59F094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A449120-5A8C-4C35-87DC-79B69E59F094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7326DF64-6E26-48F5-B73A-20626283B166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7326DF64-6E26-48F5-B73A-20626283B166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7326DF64-6E26-48F5-B73A-20626283B166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7326DF64-6E26-48F5-B73A-20626283B166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
